@@ -7,8 +7,27 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.galeria-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.galeria-imagens img {
+  max-height: 480px;
+}
+
+.galeria-imagens h3 {
+  text-align: center;
+  grid-column: span 2;
+}
+
+.galeria-imagens img:last-child {
+  grid-column: span 2;
 }
 
 .conteudo-principal-text {
